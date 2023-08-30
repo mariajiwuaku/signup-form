@@ -690,6 +690,11 @@ video {
   padding-bottom: 3rem;
 }
 
+.text-5xl {
+  font-size: 3rem;
+  line-height: 1;
+}
+
 .text-base {
   font-size: 1rem;
   line-height: 1.5rem;
@@ -716,6 +721,15 @@ video {
 .text-white {
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
+}
+
+body{
+  background-color: hsl(234, 29%, 20%);
+}
+
+main{
+  background-color: white;
+  align-items: center;
 }
 
 @media (min-width: 768px) {
