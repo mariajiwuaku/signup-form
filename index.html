@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Newsletter sign-up form with success message</title>
+  <link href="/dist/output.css" rel="stylesheet">
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+<!--  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>-->
+</head>
+<body  class="flex items-center justify-center min-h-screen font-roboto bg-pale-navy">
+  <!-- Sign-up form start -->
+
+  
+  <main
+    class="email-card flex flex-col-reverse md:flex-row justify-between w-full max-w-[930px] md:max-h-[645px] bg-white rounded-[35px] md:px-6 md:py-6 gap-5">
+    <div class="px-6 pb-12 md:px-10 md:py-16 md:w-full">
+      <h2 class="text-xl font-bold mb-2">Stay updated!</h2>
+      <p class="text-base mb-6">
+        Join 60,000+ product managers receiving monthly updates on:
+      </p>
+      <ul class="flex flex-col gap-[10px] mb-10">
+        <li class="flex items-center gap-4">
+          <img src="./assets/images/icon-success.svg" alt="" width="20" height="20" class="w-5" aria-hidden="true" />
+          <span class="text-base">Product discovery and building what matters
+          </span>
+        </li>
+        <li class="flex items-center gap-4">
+          <img src="./assets/images/icon-success.svg" alt="" width="20" height="20" class="w-5" aria-hidden="true" />
+          <span class="text-base">Measuring to ensure updates are a success
+          </span>
+        </li>
+        <li class="flex items-center gap-4">
+          <img src="./assets/images/icon-success.svg" alt="" width="20" height="20" class="w-5" aria-hidden="true" />
+          <span class="text-base">And much more!</span>
+        </li>
+      </ul>
+      <form action="" class="flex flex-col items-start">
+        <div class="flex justify-between w-full text-xs mb-3">
+          <label for="email">Email address </label>
+          <span class="span-advice text-orange hidden">Valid email required</span>
+        </div>
+        <input type="text" id="email" placeholder="email@company.com"
+          class="email-input border-[1px] border-light-gray rounded-lg w-full px-5 py-4 mb-5" />
+        <input type="submit" value="Subscribe to monthly newsletter" class="btn bg-slate-800 text-white email-input border-[1px] border-light-gray rounded-lg w-full px-5 py-4 mb-5" />
+      </form>
+    </div>
+  
+    <picture class="w-full md:w-[96%]">
+      <source srcset="./assets/images/illustration-sign-up-desktop.svg" media="(min-width: 768px)" />
+      <img src="./assets/images/illustration-sign-up-mobile.svg" alt="sign-up image" width="346" height="597"
+        class="w-full h-full object-cover rounded-2xl" />
+    </picture>
+  </main>
+  
+  <div class="hidden email-success-card bg-white rounded-[35px] max-w-[504px] py-8 px-8 lg:py-12 lg:px-16">
+    <img src="./assets/images/icon-success.svg" alt="" aria-hidden="true" width="64" height="64" class="mb-8" />
+    <h3 class="text-xl font-bold mb-7 leading-[58px]">
+      Thanks for subscribing!
+    </h3>
+    <p class="mb-8">
+      A confirmation email has been sent to
+      <span class="email-success-info font-bold"></span> Please open it and
+      click the button
+    </p>
+    <button class="btn">Dismiss message</button>
+  </div>
+  
+  
+ 
+  
+  
+  
+  
+  <!-- Sign-up form end -->
+  
+  <!-- Success message start -->
+  
+  
+  <!-- Success message end -->
+  <footer>
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Maria-goretti Jiwuaku</a>.
+  </div>
+</footer>
+</body>
+</html>
