@@ -534,6 +534,28 @@ video {
   --tw-backdrop-sepia:  ;
 }
 
+.btn {
+  margin-bottom: 1rem;
+  width: 100%;
+  cursor: pointer;
+  border-radius: 0.5rem;
+  background-color: rgb(0 0 0 / var(--tw-bg-opacity));
+  --tw-bg-opacity: 1;
+  background-color: rgb(36 39 66 / var(--tw-bg-opacity));
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  font-weight: 700;
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity));
+  transition-duration: 300ms;
+}
+
+.btn:hover {
+  --tw-shadow: 0 20px 40px -15px #ff6257;
+  --tw-shadow-colored: 0 20px 40px -15px var(--tw-shadow-color);
+  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+}
+
 .mb-10 {
   margin-bottom: 2.5rem;
 }
@@ -574,10 +596,6 @@ video {
   height: 100%;
 }
 
-.h-auto {
-  height: auto;
-}
-
 .min-h-screen {
   min-height: 100vh;
 }
@@ -588,10 +606,6 @@ video {
 
 .w-full {
   width: 100%;
-}
-
-.w-auto {
-  width: auto;
 }
 
 .max-w-\[504px\] {
@@ -638,10 +652,6 @@ video {
   gap: 10px;
 }
 
-.overflow-x-hidden {
-  overflow-x: hidden;
-}
-
 .rounded-2xl {
   border-radius: 1rem;
 }
@@ -658,9 +668,13 @@ video {
   border-width: 1px;
 }
 
-.bg-slate-800 {
+.border-light-gray {
+  border-color: #19182a40;
+}
+
+.bg-pale-navy {
   --tw-bg-opacity: 1;
-  background-color: rgb(30 41 59 / var(--tw-bg-opacity));
+  background-color: rgb(55 57 78 / var(--tw-bg-opacity));
 }
 
 .bg-white {
@@ -702,19 +716,16 @@ video {
   padding-bottom: 3rem;
 }
 
-.text-5xl {
-  font-size: 3rem;
-  line-height: 1;
+.font-roboto {
+  font-family: Robot, sans-serif;
 }
 
 .text-base {
-  font-size: 1rem;
-  line-height: 1.5rem;
+  font-size: clamp(15px, 5cqw, 16px);
 }
 
 .text-xl {
-  font-size: 1.25rem;
-  line-height: 1.75rem;
+  font-size: clamp(40px, 5cqw, 56px);
 }
 
 .text-xs {
@@ -730,18 +741,35 @@ video {
   line-height: 58px;
 }
 
-.text-white {
+.text-orange {
   --tw-text-opacity: 1;
-  color: rgb(255 255 255 / var(--tw-text-opacity));
+  color: rgb(255 98 87 / var(--tw-text-opacity));
 }
 
-body{
-  background-color: hsl(234, 29%, 20%);
+input[type="text"].invalid {
+  background-color: #ff625726;
+  color: #ff6257;
+  border: 1px solid #ff6257;
 }
 
-main{
-  background-color: white;
-  align-items: center;
+input[type="text"].invalid::-moz-placeholder {
+  color: #ff6257;
+}
+
+input[type="text"].invalid::placeholder {
+  color: #ff6257;
+}
+
+.span-advice.invalid {
+  display: block;
+}
+
+.email-card.inactive {
+  display: none;
+}
+
+.email-success-card.active {
+  display: block;
 }
 
 @media (min-width: 768px) {
