@@ -6,7 +6,10 @@
     .btn {
         @apply bg-black text-white font-bold rounded-lg w-full py-4 mb-4  bg-dark-navy hover:shadow-3xl duration-300 cursor-pointer;
     }
+        
 }
+
+
 
 input[type="text"].invalid {
     background-color: #ff625726;
